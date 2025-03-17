@@ -64,8 +64,8 @@
                         <p class="text-center small">Enter your username & password to login</p>
                     </div>
 
-                    <form class="row g-3 needs-validation" novalidate>
-
+                    <form class="row g-3" action="" method="post">
+                    {{ csrf_field() }}
                         <div class="col-12">
                         <label for="yourUsername" class="form-label">Email</label>
                         <div class="input-group has-validation">
@@ -82,8 +82,8 @@
 
                         <div class="col-12">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
-                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                            <input class="form-check-input" type="checkbox" name="remember" value="true" id="remember">
+                            <label class="form-check-label" for="remember">Remember</label>
                         </div>
                         </div>
                         <div class="col-12">
